@@ -1,0 +1,57 @@
+
+<html>
+    <head>
+        <title>list of users</title>
+    
+        <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+        <script src="bootstrap-4.4.1-dist/js/jquery-3.5.0.min.js"></script>
+        <script src="controllers/controller.js"></script>
+        <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+     
+    </head>
+    <body>
+      <div class="container">
+          <div class="col-sm-6">
+              <h1>Demo using express, jquery-ajax and bootstrap</h1>
+              <div>
+                  <form id="userForm">
+                      <div class="form-group">
+                          <label for="name">name</label>
+                         <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">email</label>
+                       <input type="text" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <br>
+                    <div class="row">
+                            <button type="submit" class="btn-primary col-sm-4">Submit</button>
+                            <button id="lists" type="button" class="btn-primary col-sm-4">Users</button>
+                    </div>
+                   
+                  </form>
+              </div>
+
+              <div id="postResponse"></div>
+              <br><br>
+              <div>
+                
+                  <div id="getResponse">
+                    <table class="table">
+                        <thead>
+                           <th>name</th>
+                            <th>email</th>
+                        </thead>
+                        <tbody class="items">
+                            <tr>
+                                <td id="name"></td>
+                                <td id="email"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+          </div>
+      </div>
+    </body>
+    </html>
